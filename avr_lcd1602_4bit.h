@@ -1,12 +1,12 @@
-/* HAB?P GÜNDO?DU
- * DÜZENLEME TAR?H?: 27 EKIM 2022
- * BU L?BRARY PIC MCU LAR ?LE
- * LCD 1602/2004 EKRANI 4 veya 8 B?T modunda kullanmak için tasarland?.
- * LCD EKRANDA ??LEM BAS?T ASLINDA
+/* HABiB GUNDOGDU
+ * DÜZENLEME TARİHİ: 4 EKIM 2023
+ * Bu library AVR MCU' lar ile
+ * LCD 1602/2004 Displayleri 4bit modunda kullanmak için tasarlandi.
+ * LCD 1602 displayde işlem basittir.
  * lcd init edilecek (datasheetten bakilarak)
- * data+enter
- * komut+enter  seklinde
- * BAZI ÖNEML? LCD KOMUTLARI
+ * data+enter , komut+enter seklinde veri gönderilecektir 
+ * 4 bit kullanımında ise uppernible+enter+lowernible+enter şeklindedir. 
+ * BAZI ÖNEMLi LCD KOMUTLARI
 Sr.No:	Hex Code 	Command to LCD instruction Register
 1 		01 			Clear display screen
 2 		02 			Return home
@@ -31,7 +31,7 @@ Sr.No:	Hex Code 	Command to LCD instruction Register
 ***************************BAZI KISA VERiLER****************************
  * ekran satirbasi adresleri 0x80, 0xC0, 0xA0, and 0xE0 Lcd_Set_Cursor() fonksiyonunda lazim olacak 
  */
- 
+
 #ifndef LCD_4BIT_H
 #define	LCD_4BIT_H
 
@@ -68,4 +68,3 @@ extern "C" {
 #endif /* __cplusplus */
 
 #endif	/* XC_HEADER_TEMPLATE_H */
-
